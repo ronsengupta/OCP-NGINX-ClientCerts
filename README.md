@@ -19,7 +19,8 @@ $echo $CN
 
 
 $ openssl req -newkey rsa:2048 -keyout $CN.rhel-cdk.10.1.2.2.xip.io.key -out $CN.rhel-cdk.10.1.2.2.xip.io.csr -nodes -subj "/C=US/ST=Texas/L=Austin/O=Global Security/OU=IT Department/CN=$CN.rhel-cdk.10.1.2.2.xip.io"
-openssl x509 -req -in $CN.rhel-cdk.10.1.2.2.xip.io.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out $CN.rhel-cdk.10.1.2.2.xip.io.crt -days 365 -sha256
+
+$ openssl x509 -req -in $CN.rhel-cdk.10.1.2.2.xip.io.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out $CN.rhel-cdk.10.1.2.2.xip.io.crt -days 365 -sha256
 
 
 
